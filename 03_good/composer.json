@@ -1,0 +1,16 @@
+{
+    "name": "ye/03_good",
+    "autoload": {
+        "psr-4": {
+            "Ye\\03Good\\": "src/",
+            "app\\":"./"
+        }
+    },
+    "authors": [
+        {
+            "name": "z349j",
+            "email": "z349j@unb.ca"
+        }
+    ],
+    "require": {}
+}
