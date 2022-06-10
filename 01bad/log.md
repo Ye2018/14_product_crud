@@ -69,7 +69,7 @@ we will see on the webpage the content like
 
 ```php
 array(1){
-    ["image"]=>
+    ["image"]=> //This is the key, given in the form: name="image"
     array(5){
         string(27)"618FTKmhQ3L.AC_SL1500_.jpg"
         ["type"]=>
