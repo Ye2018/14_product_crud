@@ -17,7 +17,8 @@ Typtical sentences of PDO are:
 
 ```php
 
-$pdo = new PDO('mysql:host=localhost;port=3306;dbname=products_crud','root',''); // the third paramter is password. For windows, it is empty
+$pdo = new PDO('mysql:host=localhost;port=3306;dbname=products_crud','root',''); // the third paramter is password. 
+// For windows, it is empty
 $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // When there is error in the connection, just throw the exception.
 
