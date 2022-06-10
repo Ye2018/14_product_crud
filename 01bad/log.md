@@ -1,4 +1,4 @@
-# Useful toold
+# Useful tools
 
 ## Bootstrap
 
