@@ -25,7 +25,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){ // To check is the current is POSR or
     if(empty($errors)){
         $image = $_FILES['image'] ?: null; // check if the image file exists.
         $imagePath = '';
-        if($image && $image['tmp_name']){
+        if($image && $image['tmp_name']){ // only use the condition $image is NOT enough, because even if
+            // there is no image uploaded, we can still see array related to $image. For this reason, 
+            // we need to go down further to check if there is a non-empty "tmp_name".
             $imagePath = 'images/'.randomString(8).'/'.$image['name'];
             mkdir(dirname($imagePath));
             move_uploaded_file($image['tmp_name'], $imagePath);
