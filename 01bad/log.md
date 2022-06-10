@@ -2,7 +2,7 @@
 
 ## Bootstrap
 
-It is link is [Home page of Bootstrap](https://getbootstrap.com/).  Bootstrap provides us with a lot of templates for start up our web page. In this project, *table*, *button* and *form* are copied and modified from bootstrap. However, bootstrap has been developed into different versions. The version used in current project is [v4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
+It is link is [Home page of Bootstrap](https://getbootstrap.com/).  Bootstrap provides us with a lot of templates for start up our web page. In this project, <style>*table*(color: blue;)</style>, *button* and *form* are copied and modified from bootstrap. However, bootstrap has been developed into different versions. The version used in current project is [v4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
 
 If for some reason, css file provided by Bootstrap cannot be linked, we can download the file.
 
