@@ -58,7 +58,7 @@ First of all, in the html page, we will have the form like:
 
 with the attribute *enctype*. This attribute is telling the form a file will be uploaded here.
 
-After this file is uploaded, if we 
+After this file is uploaded, if we
 
 ```php
 var_dump($_FILES);
