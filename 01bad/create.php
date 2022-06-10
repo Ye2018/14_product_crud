@@ -30,9 +30,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){ // To check is the current is POSR or
             mkdir(dirname($imagePath));
             move_uploaded_file($image['tmp_name'], $imagePath);
         }
-        // The snipet of code above is to generate a unique directory for the images so that each images will 
-        // have unique path to store. By doing so, even if two images have the same name, the new one will NOT
-        // overwrite the old one.
+        // The snipet of code above is to generate a unique directory for the images so that each images  
+        // will have unique path to store. By doing so, even if two images have the same name, the new one 
+        // will NOT overwrite the old one.
         // exit;
 
         //The following block of codes are to send the data to the database
