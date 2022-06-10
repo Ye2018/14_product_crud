@@ -34,7 +34,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         // have unique path to store. By doing so, even if two images have the same name, the new one will NOT
         // overwrite the old one.
         // exit;
-
+        
+        //The following block of codes are to send the data to the database
         $statement = $pdo -> prepare("INSERT INTO products (title, image, description, price, create_date)
                     VALUES(:title, :image, :description, :price, :date)");
                 // VALUE('$title', '', '$description', $price, '$date')");
