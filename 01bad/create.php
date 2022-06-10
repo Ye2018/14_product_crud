@@ -77,7 +77,8 @@ function randomString($n){
   <body>
     <h1>Create New Product</h1>
 
-    <?php if(!empty($errors)): ?>
+    <?php if(!empty($errors)): ?> <!--This line means only when $errors array is NOT empy, we 
+    will show the conent of div below-->
         <div class="alert alert-danger">
             <?php foreach($errors as $error): ?>
                <div><?php echo $error ?></div>
