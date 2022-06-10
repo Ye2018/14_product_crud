@@ -25,10 +25,9 @@ $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //The following block of codes are to send the data to the database
 $statement = $pdo -> prepare("INSERT INTO products (title, image, description, price, create_date)
             VALUES(:title, :image, :description, :price, :date)");
-        // VALUE('$title', '', '$description', $price, '$date')"); The reason we don't use this form 
-        // of value to insert information into the database directly is this way of inserting data is
-        // NOT secure. Some user may insert some SQL commands here to manage the database in the 
-        // malicious ways.
+        // VALUE('$title', '', '$description', $price, '$date')"); The reason we don't use exec() rather
+        // than prepare() is that the value to be inserted into the database directly is NOT secure. 
+        // Some user may insert some SQL commands here to manage the database in the malicious ways.
 $statement->bindValue(':title', $title); 
 $statement->bindValue(':image', $imagePath); 
 $statement->bindValue(':description', $description); 
