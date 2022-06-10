@@ -86,7 +86,9 @@ function randomString($n){
     <form action="" method="post" enctype="multipart/form-data">
         <!--Here for the method, we use 'post' rather than 'get'. 
         The reason is, when 'get' is used, the information to be sent will be 
-        shown in url, which is not secure.
+        shown in url, which is not secure. The displayed information will be like
+        "image=&title=&description=&price=", which is called query string. The query string
+        appears when each of the input was given a "name" such as name = "image", etc.
         Using enctype attribute like this, we can upload files, like an imaage of a cell phone.
         -->
         <div class="form-group">
