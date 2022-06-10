@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){ // To check is the current is POSR or
     }
 // echo 'title '.$title;
     if(empty($errors)){
-        $image = $_FILES['image'] ?: null;
+        $image = $_FILES['image'] ?: null; // check if the image file exists.
         $imagePath = '';
         if($image && $image['tmp_name']){
             $imagePath = 'images/'.randomString(8).'/'.$image['name'];
