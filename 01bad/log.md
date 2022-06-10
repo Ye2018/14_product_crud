@@ -1,4 +1,4 @@
-# Useful tools
+# Useful tools & Important Concepts
 
 ## Bootstrap
 
@@ -35,3 +35,12 @@ $statement->bindValue(':price', $price);
 $statement->bindValue(':date', $date); 
 $statement->execute();
 ```
+
+## Super Globals
+
+There are many useful super globals in PHP, such as
+
++ ```php $_SERVER ```
+
++ ```php $_SESSION ```
++ 
