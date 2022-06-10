@@ -40,7 +40,11 @@ $statement->execute();
 
 There are many useful super globals in PHP, such as
 
-+ ```php $_SERVER ```
++ ```php
+
+ $_SERVER
+ 
+ ```
 
 + ```php $_SESSION ```
 + 
