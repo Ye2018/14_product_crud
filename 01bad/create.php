@@ -1,7 +1,7 @@
 
 <?php
-
 $pdo = new PDO('mysql:host=localhost;port=3306;dbname=products_crud','root',''); // the third paramter is password. For windows, it is empty
+//Super Globals $_COOKIE, $_SESSION, $_SERVER, $_GET, $_FILES, $_POST, $_ENV etc. 
 $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $errors = [];
