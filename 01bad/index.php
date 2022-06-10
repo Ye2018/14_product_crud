@@ -3,6 +3,7 @@
 // pdo support multiple databases and OOP
 $pdo = new PDO('mysql:host=localhost;port=3306;dbname=products_crud','root',''); // the third paramter is password. For windows, it is empty
 $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// When there is error in the connection, just throw the exception.
 
 // $search = $_GET['search'] ?: '';
 if(!empty($_GET['search'])){
@@ -11,7 +12,7 @@ if(!empty($_GET['search'])){
     $search = '';
 }
 if ($search){
-    $statement = $pdo -> prepare('SELECT * FROM products WHERE title LIKE :title ORDER BY create_date DESC'); 
+    $statement = $pdo->prepare('SELECT * FROM products WHERE title LIKE :title ORDER BY create_date DESC'); 
     $statement -> bindValue(':title', "%$search%");
 }else{
     $statement = $pdo -> prepare('SELECT * FROM products ORDER BY create_date DESC');  // exec is anotther option, but it is recommended in making some changes in the databases kema.
