@@ -72,7 +72,8 @@ $products = $statement -> fetchAll(PDO::FETCH_ASSOC); // each record inside the 
              <td>><?php echo $product['price'] ?></td>
              <td>><?php echo $product['create_date'] ?></td>
              <td>
-                <a href="update.php?id=<?php echo $product['id'] ?>" class="btn btn-sm btn-outline-primary">Edit</a> <!-- we use $product['id'] to tell which item should be 
+                <a href="update.php?id=<?php echo $product['id'] ?>" class="btn btn-sm btn-outline-primary">Edit</a> 
+                <!-- we use $product['id'] to tell which item should be 
                 deleted or updated -->
                 <form style="display: inline-block;" action="delete.php" method="post"> 
                 <!--Use display: inline-block to avoid the two buttons to stack together-->
