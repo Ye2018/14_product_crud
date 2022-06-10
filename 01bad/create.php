@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){ // To check is the current is POSR or
     $price = $_POST['price'];
     $date = date('Y-m-d H:i:s');
 
-    if(!$title){
+    if(!$title){  // title is a mandatory value, if it dosen't exist, it is an error
         $errors[] = 'Product title is required';
     }
     if(!$price){
