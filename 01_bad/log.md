@@ -48,6 +48,8 @@ There are many useful super globals in PHP, such as
 + $_COOKIE
 + etc
 
+Those super globals are important since they contains parameter can be used in the code to establish the complete logic. Usually, those information are organized in the form of associated array.
+
 ## Uploading Files such as an image
 
 First of all, in the html page, we will have the form like:
