@@ -9,7 +9,7 @@ $errors = [];
 $title = '';
 $price = '';
 $description = '';
-if($_SERVER['REQUEST_METHOD'] === 'POST'){ // To check is the current is POSR or not
+if($_SERVER['REQUEST_METHOD'] === 'POST'){ // To check is the current is POST or not
     $title = $_POST['title'];
     $description = $_POST['description'];
     $price = $_POST['price'];
