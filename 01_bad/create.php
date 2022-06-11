@@ -96,7 +96,7 @@ function randomString($n){
         Using enctype attribute like this, we can upload files, like an imaage of a cell phone.
         -->
         <!--
-            The attribute enctype="multipart/form-data" is tell the form, I am ganna submit files
+            The attribute enctype="multipart/form-data" is telling the form, I am ganna submit files
         -->
         <div class="form-group">
             <label> Product Image </label>
