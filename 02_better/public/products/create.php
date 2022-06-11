@@ -36,7 +36,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $statement->execute();
         header('LOCATION: index.php');
     }
-// Here we use prepare rather than exec, the reason is when exec is used, user my fill in some query to drop the database, which is malicious and not safe.
+// Here we use prepare rather than exec, the reason is when exec is used,
+// user my fill in some query to drop the database, which is malicious and not safe.
 }
 
 ?>
