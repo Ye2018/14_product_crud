@@ -9,7 +9,8 @@ $errors = [];
 $title = '';
 $price = '';
 $description = '';
-$product = [
+$product = [  // This varialbe is not used in create.php. However, in order to resude form.php, we need to 
+              // create such a variable to avoid the error like undefined variable.
     'image' => ''
 ];
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
