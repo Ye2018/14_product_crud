@@ -48,7 +48,7 @@ There are many useful super globals in PHP, such as
 + $_COOKIE
 + etc
 
-Those super globals are important since they contains parameter can be used in the code to establish the complete logic. Usually, those information are organized in the form of associated array.
+Those super globals are are built-in variables that are always available in all scopes. They are important since they contains parameter can be used in the code to establish the complete logic. Usually, those information are organized in the form of associated array. We can use the command such as var_dump(_$SERVER) to check what kind of information contained in the super global variable. Here is [a good reference](https://www.w3schools.com/php/php_superglobals.asp).
 
 ## Uploading Files such as an image
 
