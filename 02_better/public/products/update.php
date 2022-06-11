@@ -1,6 +1,6 @@
 <?php
 
-/** @var $pdo \PDO */
+/** @var $pdo \PDO */ // This is a docblock, telling us $pdo is and instance of class PDO.
 require_once "../../database.php";
 require_once '../../function.php';
 
