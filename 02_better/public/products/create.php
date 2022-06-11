@@ -18,11 +18,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 // echo 'title '.$title;
     if(empty($errors)){
-        
-        // The snipet of code above is to generate a unique directory for the images so that each images will 
-        // have unique path to store. By doing so, even if two images have the same name, the new one will NOT
-        // overwrite the old one.
-        // exit;
 
         $statement = $pdo -> prepare("INSERT INTO products (title, image, description, price, create_date)
                     VALUES(:title, :image, :description, :price, :date)");
