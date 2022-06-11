@@ -19,3 +19,5 @@ $myAge = $age ?: 18;
 ```
 
 In each of the subfolder, I will write a log.md to record useful comments and links. I hope this will be helpful for the beginners like me. Let's work together for build up our own community.
+
+To beginners like me, my personal opinion is the *bad* version of the project is the most important edition, because tons of fundamental concepts are presented in this one. Those fundamental ideas includes how to connnect a database, how the php interact with html, how to make use of tools like bootstrap and the logic between each of the components, etc. For this reason, I strongly suggest, after we finish writing the codes, we need to review it so that we can establish a big picture in mind.
