@@ -20,6 +20,6 @@ To build a virtul host, the command
 php -S localhost: 8080
 ```
 
-is used.
+is used. After that, we can see from the browser with the url "localhost:8080/products", all the system we have established before.
 
 ## Useful shortcut and tips
