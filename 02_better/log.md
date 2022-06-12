@@ -22,6 +22,24 @@ php -S localhost: 8080
 
 This command is used within the directory of ~/php-crash-course-2020/14_product_crud/02_better/public. After that, we can see from the browser with the url "localhost:8080/products", all the system we have established up to now.
 
-In the newly established localhost, we need to change path of css files and images so that they can be included in current system.
+In the newly established localhost, we need to change path of *css* files and *images* so that they can be included in current system. To this end, we need to modify the header.php file contained in /view/partial. The line
 
-## Useful shortcut and tips
+```php
+<link rel="stylesheet" href="app.css">
+```
+
+should be changed into
+
+```php
+<link rel="stylesheet" href="/app.css">
+```
+
+The "/" is to include the absolute path, this symbol will take us back to domain, then we can start from there to figure out the location of the css file. Same thing happens on the images. We need to copy the images folder under the path of ~/php-crash-course-2020/14_product_crud/02_better/public, then we need to add a '/' at corresponding position where the images are mentioned, such as Line 10 in the file form.php in the views/products folder:
+
+```php
+<img src="/<?php echo $product['image'] ?>" class="updated-image" alt="">
+```
+
+## Extra comments on the better version
+
+Even if the codes have been refactored and better organized, the current practice is still not the optimized. The reason is, in order to realize a functionality, we have to create a new file to do this. Eventually, that will lead to tons of such files which are very hard to maintain.
