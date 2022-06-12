@@ -14,12 +14,14 @@ Very often, there is a public folder in the morden framework, so that the browse
 
 A virtual host can run more than one website at a time. Configure it properly, and you'll have one machine that can load two, three, or more websites. The reason is virtual hosts isolate and independently manage multiple sets of resources on the same physical machine. Resources associated with one virtual host **cannot** share data with resources associated with another virtual host.
 
-To build a virtul host, the command
+Before we step into virtual host, Let us try to start a local host, which can be built according to the following command:
 
 ```bash
 php -S localhost: 8080
 ```
 
-is used. After that, we can see from the browser with the url "localhost:8080/products", all the system we have established before.
+This command is used within the directory of ~/php-crash-course-2020/14_product_crud/02_better/public. After that, we can see from the browser with the url "localhost:8080/products", all the system we have established up to now.
+
+In the newly established localhost, we need to change path of css files and images so that they can be included in current system.
 
 ## Useful shortcut and tips
