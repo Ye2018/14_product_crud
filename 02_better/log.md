@@ -43,3 +43,13 @@ The "/" is to include the absolute path, this symbol will take us back to domain
 ## Extra comments on the better version
 
 Even if the codes have been refactored and better organized, the current practice is still not the optimized. The reason is, in order to realize a functionality, we have to create a new file to do this. Eventually, that will lead to tons of such files which are very hard to maintain.
+
+## Useful tips
+
+The magic constant:
+
+```php
+__DIR__
+```
+
+gives us the current directory where that file is located. This is used in the validat_product.php Ln 16.
