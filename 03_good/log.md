@@ -74,3 +74,8 @@ To use this file, instead of using whole bunch of *require*s, we need only one s
 ```php
 require_once "vendor/autoload.php";
 ```
+
+### Packagist
+
+Packagist is the main Composer repository. It aggregates public PHP packages installable with Composer. Among those packages, guzzlehttp/guzzle is a PHP HTTP client library that makes it easy to send HTTP requests and trivial to integrate with web services.
+
