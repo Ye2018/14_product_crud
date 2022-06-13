@@ -102,3 +102,6 @@ After this package is installed, the following information should be included in
 
 Modules, views and controllers. Actually, MVC is a big topic. Fortunately, I found another [video form Zura](https://www.youtube.com/watch?v=GTESlsYTUns), which is specially dedicated to this topic.
  
+## Useful Links
+
+What is [ob_start()](https://www.w3schools.com/php/ref_output_ob_start.asp#:~:text=The%20ob_start()%20function%20creates,buffer%20is%20able%20to%20do.)?

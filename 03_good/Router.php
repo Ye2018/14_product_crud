@@ -66,7 +66,7 @@ class Router{
         foreach($params as $key => $value) {
             $$key = $value;
         }
-        ob_start();
+        ob_start(); // start cache of the output.
         include_once __DIR__."/views/$view.php";
         $content = ob_get_clean();
         include_once __DIR__.'/views/_layout.php';
