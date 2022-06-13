@@ -77,5 +77,11 @@ require_once "vendor/autoload.php";
 
 ### Packagist
 
-Packagist is the main Composer repository. It aggregates public PHP packages installable with Composer. Among those packages, guzzlehttp/guzzle is a PHP HTTP client library that makes it easy to send HTTP requests and trivial to integrate with web services.
+Packagist is the main Composer repository. It aggregates public PHP packages installable with Composer. Among those packages, guzzlehttp/guzzle is a PHP HTTP client library that makes it easy to send HTTP requests and trivial to integrate with web services. More detailed description can be found [here](https://packagist.org/packages/guzzlehttp/guzzle). To install the package, we need to run the command
+
+```bash
+composer require guzzlehttp/guzzle
+```
+
+in terminal.
 
