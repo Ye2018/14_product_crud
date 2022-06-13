@@ -52,4 +52,4 @@ The magic constant:
 __DIR__
 ```
 
-gives us the current directory where that file is located. This is used in the validat_product.php Ln 16.
+gives us the current directory where that file is located. For example, this is used in the validat_product.php Ln 16 as a prefix.
