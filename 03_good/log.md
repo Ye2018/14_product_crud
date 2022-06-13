@@ -100,5 +100,5 @@ After this package is installed, the following information should be included in
 
 ** MVC
 
-Modules, views and controllers.
-
+Modules, views and controllers. Actually, MVC is a big topic. Fortunately, I found another [video form Zura](https://www.youtube.com/watch?v=GTESlsYTUns), which is specially dedicated to this topic.
+ 
