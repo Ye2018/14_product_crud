@@ -75,13 +75,30 @@ To use this file, instead of using whole bunch of *require*s, we need only one s
 require_once "vendor/autoload.php";
 ```
 
+After that, we can use the keyword **use** to include the classes we want like
+
+```php
+use app\Email;
+use app\Person;
+```
+
 ### Packagist
 
-Packagist is the main Composer repository. It aggregates public PHP packages installable with Composer. Among those packages, guzzlehttp/guzzle is a PHP HTTP client library that makes it easy to send HTTP requests and trivial to integrate with web services. More detailed description can be found [here](https://packagist.org/packages/guzzlehttp/guzzle). To install the package, we need to run the command
+Packagist is the main Composer repository. It aggregates public PHP packages installable with Composer. Among those packages, guzzlehttp/guzzle is a PHP HTTP client library that makes it easy to send HTTP requests and trivial to integrate with web services. More detailed description can be found [here](https://packagist.org/packages/guzzlehttp/guzzle). To install the package, we need to run the command in terminal this:
 
 ```bash
 composer require guzzlehttp/guzzle
 ```
 
-in terminal.
+After this package is installed, the following information should be included in the file composer.json
+
+```json
+"require": {
+        "guzzlehttp/guzzle": "^7.4"
+    }
+```
+
+** MVC
+
+Modules, views and controllers.
 
