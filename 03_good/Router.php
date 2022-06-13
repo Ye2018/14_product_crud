@@ -54,7 +54,8 @@ class Router{
         // var_dump($fn);
 
         if ($fn){
-            call_user_func($fn, $this);
+            call_user_func($fn, $this); // call_user_func is a special function, whenever you pass a 
+            // function in it, it will execute this function.
         }else{
             echo "Page not found";
         }
