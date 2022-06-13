@@ -1,5 +1,5 @@
 <?php
-// echo "Index Page";
+// Functionality of this index.php is to take in the request and give out the response;
 require_once __DIR__.'/../vendor/autoload.php';
 
 use app\Router;
@@ -16,4 +16,4 @@ $router->get('/products/update',[ProductController::class, 'update']);
 $router->post('/products/update',[ProductController::class, 'update']);
 $router->post('/products/delete',[ProductController::class, 'delete']);
 
-$router->resolve();
+$router->resolve(); // resovle will detect what the current router is and execute the corresponding function
