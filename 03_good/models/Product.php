@@ -8,7 +8,7 @@ use app\helpers\UtilHelper;
 
 class Product
 {
-    public ?int $id = null;
+    public ?int $id = null; //question mark in front of int means id is option, it can be null
     public ?string $title = null;
     public ?string $description = null;
     public ?float $price = null;
