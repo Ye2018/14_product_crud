@@ -7,7 +7,8 @@ use app\controllers\ProductController;
 
 $router = new Router();
 
-$router->get('/',[ProductController::class, 'index']);
+$router->get('/',[ProductController::class, 'index']); // This sentence means whenever the url is '/', 
+                                                       // the function 'index' will be executed.
 $router->get('/products',[ProductController::class, 'index']);
 $router->get('/products/create',[ProductController::class, 'create']);
 $router->post('/products/create',[ProductController::class, 'create']);
