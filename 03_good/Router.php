@@ -64,7 +64,8 @@ class Router{
     public function renderView($view, $params = [])  
     {
         foreach($params as $key => $value) {
-            $$key = $value;
+            $$key = $value; // The reason we use 2 $ symbols here is $key itself equal to product, then 
+            // $$key amounts to $products. Therefore, this sentence means the $value is assigned to $products
         }
         ob_start(); // start buffer of the output.
         include_once __DIR__."/views/$view.php";
