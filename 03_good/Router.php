@@ -68,7 +68,7 @@ class Router{
         }
         ob_start(); // start buffer of the output.
         include_once __DIR__."/views/$view.php";
-        $content = ob_get_clean();
+        $content = ob_get_clean(); // Store the contents of an output buffer in a variable:
         include_once __DIR__.'/views/_layout.php';
     }
     
