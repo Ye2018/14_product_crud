@@ -23,7 +23,8 @@ class Router{
         $this->postRoutes[$url] = $fn;
     }
 
-    public function resolve()
+    public function resolve() // resovle will detect what the current router is and execute the
+    // corresponding function
     {
         // var_dump($_SERVER);
         // echo json_encode($_SERVER['REMOTE_PORT']);
