@@ -82,6 +82,8 @@ class Router{
         include_once __DIR__."/views/$view.php";
         $content = ob_get_clean(); // Store the contents of an output buffer in a variable
         // and then deletes the contents from the buffer.
+        // The reason we need to setup $content here is in layout.php mentioned below, 
+        // we need to render this information
         include_once __DIR__.'/views/_layout.php';
     }
     
