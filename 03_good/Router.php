@@ -37,7 +37,15 @@ class Router{
         // }else{
         //     $currentUrl = '/';
         // }
+        // From the following code, we need to learn how to use the super global $_SERVER
+        // to obtain the information we need. 
+        // One thing I need to mention here is for some unknown reason, 
+        // $currentUrl = $_SERVER['PATH_INFO'] ?: '/'; cannot always be executed sucessfully.
+        // Therefore, I have to get the $currentUrl from $_SERVER['REQUEST_URI']
         $currentUrl = $_SERVER['REQUEST_URI'] ?: '/';
+        // However, $currentUrl obtained from the sentence above may contain extra information
+        // we don't want. Fortunately, this extra information happens behind '?'.
+        // For this reason, we have the following if-block.
         if(strpos($currentUrl, '?') !== false)
         {
             $currentUrl = substr($currentUrl, 0, strpos($currentUrl, '?'));
