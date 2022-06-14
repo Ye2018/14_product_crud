@@ -4,9 +4,9 @@ namespace app;
 error_reporting( E_ALL ^ ( E_NOTICE | E_WARNING | E_DEPRECATED ) );
 class Router{
 
-    public array $getRoutes = [];
-    public array $postRoutes = [];
-    public Database $db;
+    public array $getRoutes = []; // class Router need 3 attributs. The first two are 
+    public array $postRoutes = []; // from the get() and post() methods, the third is
+    public Database $db;           // from construct.
 
     public function __construct()
     {
