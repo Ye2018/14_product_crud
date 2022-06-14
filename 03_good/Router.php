@@ -1,5 +1,5 @@
 <?php
-
+// Router is used to handle the request and return the response
 namespace app;
 error_reporting( E_ALL ^ ( E_NOTICE | E_WARNING | E_DEPRECATED ) );
 class Router{
