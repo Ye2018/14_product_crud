@@ -65,6 +65,8 @@ class Router{
         if ($fn){
             call_user_func($fn, $this); // call_user_func is a special function, whenever you pass a 
             // function in it, it will execute this function.
+            // The reason we have the second parameter $this is $this here donte the Router itself, 
+            // and by doing so, we can let ProductController to establish a relationship to Router.
         }else{
             echo "Page not found";
         }
