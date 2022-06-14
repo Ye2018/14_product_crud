@@ -6,7 +6,10 @@ class Router{
 
     public array $getRoutes = []; // class Router need 3 attributs. The first two are 
     public array $postRoutes = []; // from the get() and post() methods, the third is
-    public Database $db;           // from construct.
+    public Database $db;           // from __construct(). The third attribute means the
+    // task of connecting the database is done in Router. By doing so, for any other class,
+    // if the connection to database is necessary, they just need to "use Router". Maybe, I
+    // think that is the reason we call it Router. 
 
     public function __construct()
     {
