@@ -24,5 +24,5 @@ $router->post('/products/delete',[ProductController::class, 'delete']);
 $router->resolve(); // resovle will detect what the current router is and execute the corresponding function
 
 // To my understanding, the construction of current system is like this: Use index.php as an entry to call 
-// Router.php. From Router.php, we use get() contained in that class to refer to various functionalities 
-// contained in class ProductController. 
+// Router.php to refer to the method get() and post() contained in that class. Meanwhile, to various  
+// functionalities contained in the class ProductController are referred to and passed into get(). 
