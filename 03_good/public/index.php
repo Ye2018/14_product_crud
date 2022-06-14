@@ -1,5 +1,6 @@
 <?php
-// Functionality of this index.php is to take in the request and give out the response;
+// Functionality of this index.php is the entry of system, since it can be accessed via browser, 
+// it should be put into the folder /public;
 require_once __DIR__.'/../vendor/autoload.php';
 
 use app\Router;
