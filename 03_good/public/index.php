@@ -12,6 +12,8 @@ $router = new Router();
 
 $router->get('/',[ProductController::class, 'index']); // This sentence means whenever the url is '/', 
                                                        // the function 'index' will be executed.
+                                                       // According to the use of namespace, we know this
+                                                       // class located in the directory of app\controllers\
 $router->get('/products',[ProductController::class, 'index']);
 $router->get('/products/create',[ProductController::class, 'create']);
 $router->post('/products/create',[ProductController::class, 'create']);
