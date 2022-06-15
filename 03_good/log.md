@@ -118,6 +118,8 @@ MyClass :: test();
 
 Static Function and property are used in the Singleton Database class. That is the reason we need to know the fundamental concepts here.
 
-## Useful Links & TIps
+## Useful Links & Tips
 
 What is [ob_start()](https://www.w3schools.com/php/ref_output_ob_start.asp#:~:text=The%20ob_start()%20function%20creates,buffer%20is%20able%20to%20do.)?
+
+Alt+click can activate multi-cursor.
