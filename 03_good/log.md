@@ -122,6 +122,10 @@ Static Function and property are used in the Singleton Database class. That is t
 
 Since I am using Wamp, not the Xammp used in the tutorial video, there is some difference in the configuration. The wamp user like me can follow this [link](https://noobietech.com/create-a-virtual-host-in-wamp-windows/) to set up correct virtual host.
 
+## Sessions and Cookies
+
+If you want to save data in sessions, the data is in the server's end. If you save data in cookie, the data is in client's side.
+
 ## Useful Links & Tips
 
 What is [ob_start()](https://www.w3schools.com/php/ref_output_ob_start.asp#:~:text=The%20ob_start()%20function%20creates,buffer%20is%20able%20to%20do.)?
