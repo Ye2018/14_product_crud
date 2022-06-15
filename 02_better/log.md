@@ -10,7 +10,7 @@ To develope a real big project, it is good to use framework like [lavarel, symph
 
 Very often, there is a public folder in the morden framework, so that the browser can get access to this folder. It is a good practice to do so, since we don't want the browser has the ability to reach all the files.
 
-## Virtual Host
+## Local Host
 
 A virtual host can run more than one website at a time. Configure it properly, and you'll have one machine that can load two, three, or more websites. The reason is virtual hosts isolate and independently manage multiple sets of resources on the same physical machine. Resources associated with one virtual host **cannot** share data with resources associated with another virtual host.
 
