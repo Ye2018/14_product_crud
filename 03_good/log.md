@@ -101,7 +101,11 @@ After this package is installed, the following information should be included in
 ** MVC
 
 Modules, views and controllers. Actually, MVC is a big topic. Fortunately, I found another [video form Zura](https://www.youtube.com/watch?v=GTESlsYTUns), which is specially dedicated to this topic.
- 
-## Useful Links
+
+## Singleton
+
+When we try to create the Database class, we realize this class is a singleton, since it contains only one instance. Actually, after I googled around, I realized there is a something called *Singleton Design Pattern*. By using the Singleton Design here, we garantee there is only one database connection object. More information can be found on [Geeks for Geeks](https://www.geeksforgeeks.org/how-to-create-singleton-design-pattern-in-php-5/).
+
+## Useful Links & TIps
 
 What is [ob_start()](https://www.w3schools.com/php/ref_output_ob_start.asp#:~:text=The%20ob_start()%20function%20creates,buffer%20is%20able%20to%20do.)?
