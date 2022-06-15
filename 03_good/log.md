@@ -106,6 +106,12 @@ Modules, views and controllers. Actually, MVC is a big topic. Fortunately, I fou
 
 When we try to create the Database class, we realize this class is a singleton, since it contains only one instance. Actually, after I googled around, I realized there is a something called *Singleton Design Pattern*. By using the Singleton Design here, we garantee there is only one database connection object. More information can be found on [Geeks for Geeks](https://www.geeksforgeeks.org/how-to-create-singleton-design-pattern-in-php-5/).
 
+## Static Function
+
+In some scenario, if we want to get access to some methods or properties DIRECTLY from a class rather than an object, we need to set up static function and declare static properties. More examples and explanations can be seen [here](https://www.geeksforgeeks.org/static-function-in-php/#:~:text=Any%20method%20declared%20as%20static,class%2C%20static%20keyword%20is%20used).
+
+Static Function and property are used in the Singleton Database class. That is the reason we need to know the fundamental concepts here.
+
 ## Useful Links & TIps
 
 What is [ob_start()](https://www.w3schools.com/php/ref_output_ob_start.asp#:~:text=The%20ob_start()%20function%20creates,buffer%20is%20able%20to%20do.)?
