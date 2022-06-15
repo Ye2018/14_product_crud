@@ -108,7 +108,13 @@ When we try to create the Database class, we realize this class is a singleton, 
 
 ## Static Function
 
-In some scenario, if we want to get access to some methods or properties DIRECTLY from a class rather than an object, we need to set up static function and declare static properties. More examples and explanations can be seen [here](https://www.geeksforgeeks.org/static-function-in-php/#:~:text=Any%20method%20declared%20as%20static,class%2C%20static%20keyword%20is%20used).
+In some scenario, if we want to get access to some methods or properties DIRECTLY from a class rather than an object, we need to set up static function and declare static properties.They can be invoked directly outside the class by using scope resolution operator (::) as follows:
+
+```php
+MyClass :: test();
+```
+
+ More examples and explanations can be seen [here](https://www.geeksforgeeks.org/static-function-in-php/#:~:text=Any%20method%20declared%20as%20static,class%2C%20static%20keyword%20is%20used).
 
 Static Function and property are used in the Singleton Database class. That is the reason we need to know the fundamental concepts here.
 
